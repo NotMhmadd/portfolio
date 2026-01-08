@@ -47,6 +47,31 @@ const projectTypes = {
     'Cannelle': 'Others',
 };
 
+const projectDescriptions = {
+    'McCafe': "I handled the account of McCafe - KSA for well over a year, building a consistent yet creative social media image for the brand. Here is a sample of my work for McCafe, many of which I myself come with everything in it from the concept, the copy, and the design.",
+    'Sunnymoon': "I handled the full branding, from the original logo ideation down to the smallest detail. I put an emphasis on the icons in this project, where the three icons each represent a character with its own theme, but within one greater identity.",
+    'Popeyes': "I handled the account of Popeyes as they were opening in KSA. Popeyes integrated right into the Saudi culture as a fun and exciting brand touching with the excited Saudi youth. Here is a sample of my work for Popeyes, many of which I myself come with everything in it from the concept, the copy, and the design.",
+    'MAC': "I worked on the account of MAC Platforms, a creative agency I worked in. I adopted a collage style for it along with different style of reels for depending on the client.",
+    'Sofar': "I organize Sofar Beirut - a music concept where hundreds of people attend a music gig without knowing who are the bands that are going to play, also knowing the venue only one day before the gig. I create the poster for every gig announcement, do promotional videos, art direct sets and video shooting style while eventually editing the videos.",
+    'CwF': "I created both the visual identity and the communication style for Crispy w Fahita, adapted to reach all of its potential target audience with a strong persona. Redesigned the logo, adapted poppy colors, directed photoshoots, created new wrapping paper and packaging, store sign, and much more.",
+    'DGA': "DGA is a program by the Saudi Government that aims to digitalize work in all of its branches. I created the PDF that was given to all entities to explain the program (You can find snippets below) as well as designing and directing the main video of it.",
+    'Al Hawari': "I was responsible for the full rebranding of Al Hawari's famous juice shop in Beirut. I focused on blending 2 key elements into it; 1st was the old nostalgic Beirut feel as it Al Hawari's history is a big plus against its competitors. 2nd key element was having a very appealing visual style, using strong colors with minimal design to give it an aesthetic sense its target audiences would notice and enjoy.",
+    'La Roche': "Adapted a dreamy visual style with the products being the main element in the brand.",
+    'Aalaqaat': "I designed the core identity of Alaqaat, a Saudi law firm looking to position itself as a market-leading trustable partner.",
+    'FFF': "Created the social media visual style and opening grids for Frozen Food Factory, a brand selling high level - long lasting frozen meals.",
+    'Sifr': "Participated in creating the visual identity, adapting a powerful style of duotone and bitmap for image treatment, and conceptual graphics work. The aim was to create a unique to be stand out in the overwhelming timelines of today.",
+    'Ethos': "Ethos is a KSA based creative agency I spent over a year working in. I used to create the visuals for the company whether they were needed to be posted on LinkedIn or be sent to the team or clients.",
+    'ASH': "ASH Vodka is a Lebanese Vodka Brand that is bold, young, elegant and proud.",
+    'Avene': "Directed the visual art direction for Avene's digital presence, focusing on clean, dermatological aesthetics that highlight product purity and efficacy.",
+    'OPPO': "Produced dynamic social media content and AI-driven reels to showcase the technological innovation of OPPO smartphones.",
+    'Freshdays': "Developed engaging social media content and AI reels for Freshdays, focusing on a fresh and relatable brand voice.",
+    'Gipsy': "Created high-energy social media content and AI reels for Gipsy, aligning with their bold brand identity.",
+    'Handy': "Managed social media visuals and AI reels for Handy, ensuring a clean and professional aesthetic.",
+    'Happies': "Produced fun and vibrant social media content and AI reels for Happies, capturing the brand's joyful essence.",
+    'Cannelle': "Product photography and visual content creation for Cannelle, highlighting the texture and quality of their offerings.",
+    'Private': "Confidential projects involving branding and visual identity design."
+};
+
 // Priority order for projects (most important first)
 // Projects not in this list will appear alphabetically after these
 const priorityOrder = [
@@ -124,6 +149,7 @@ const projects = folders.map(folder => {
         id,
         name: folder,
         type: projectTypes[folder] || 'Design',
+        description: projectDescriptions[folder] || '',
         thumbnail,
     };
 
@@ -144,13 +170,11 @@ const projects = folders.map(folder => {
 projects.sort((a, b) => {
     const aIndex = priorityOrder.indexOf(a.name);
     const bIndex = priorityOrder.indexOf(b.name);
-    // If both are in priority list, sort by their position
+
     if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-    // If only a is in priority list, a comes first
     if (aIndex !== -1) return -1;
-    // If only b is in priority list, b comes first
     if (bIndex !== -1) return 1;
-    // Otherwise sort alphabetically
+
     return a.name.localeCompare(b.name);
 });
 
@@ -162,6 +186,7 @@ projects.forEach((p, i) => {
     output += `    id: "${p.id}",\n`;
     output += `    name: "${p.name}",\n`;
     output += `    type: "${p.type}",\n`;
+    output += `    description: \`${p.description.replace(/`/g, '\\`')}\`,\n`; // Use backticks for safety
     output += `    thumbnail: "${p.thumbnail}",\n`;
 
     if (p.images) {

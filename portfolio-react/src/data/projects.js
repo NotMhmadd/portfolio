@@ -4,6 +4,7 @@ export const projects = [
     id: "avene",
     name: "Avene",
     type: "Art Direction",
+    description: `Directed the visual art direction for Avene's digital presence, focusing on clean, dermatological aesthetics that highlight product purity and efficacy.`,
     thumbnail: "/images/Avene/A1.jpg",
     images: [
       "/images/Avene/A1.jpg",
@@ -27,6 +28,7 @@ export const projects = [
     id: "mccafe",
     name: "McCafe",
     type: "Social Media",
+    description: `I handled the account of McCafe - KSA for well over a year, building a consistent yet creative social media image for the brand. Here is a sample of my work for McCafe, many of which I myself come with everything in it from the concept, the copy, and the design.`,
     thumbnail: "/images/McCafe/A1.jpg",
     images: [
       "/images/McCafe/A1.jpg",
@@ -80,6 +82,7 @@ export const projects = [
     id: "sofar",
     name: "Sofar",
     type: "Social Media + Art Direction",
+    description: `I organize Sofar Beirut - a music concept where hundreds of people attend a music gig without knowing who are the bands that are going to play, also knowing the venue only one day before the gig. I create the poster for every gig announcement, do promotional videos, art direct sets and video shooting style while eventually editing the videos.`,
     thumbnail: "/images/Sofar/A1.jpg",
     images: [
       "/images/Sofar/A1.jpg",
@@ -104,6 +107,7 @@ export const projects = [
     id: "sunnymoon",
     name: "Sunnymoon",
     type: "Social Media + Branding",
+    description: `I handled the full branding, from the original logo ideation down to the smallest detail. I put an emphasis on the icons in this project, where the three icons each represent a character with its own theme, but within one greater identity.`,
     thumbnail: "/images/Sunnymoon/Artboard%2028.jpg",
     images: [
       "/images/Sunnymoon/Artboard%201.png",
@@ -148,6 +152,7 @@ export const projects = [
     id: "cannelle",
     name: "Cannelle",
     type: "Others",
+    description: `Product photography and visual content creation for Cannelle, highlighting the texture and quality of their offerings.`,
     thumbnail: "/images/Cannelle/A1.jpg",
     images: [
       "/images/Cannelle/A1.jpg",
@@ -168,6 +173,7 @@ export const projects = [
     id: "oppo",
     name: "OPPO",
     type: "Social Media + AI Reels",
+    description: `Produced dynamic social media content and AI-driven reels to showcase the technological innovation of OPPO smartphones.`,
     thumbnail: "/images/OPPO/A1.png",
     images: [
       "/images/OPPO/A1.png",
@@ -184,6 +190,7 @@ export const projects = [
     id: "freshdays",
     name: "Freshdays",
     type: "Social Media + AI Reels",
+    description: `Developed engaging social media content and AI reels for Freshdays, focusing on a fresh and relatable brand voice.`,
     thumbnail: "/images/Freshdays/A1.png",
     images: [
       "/images/Freshdays/A1.png",
@@ -210,6 +217,7 @@ export const projects = [
     id: "popeyes",
     name: "Popeyes",
     type: "Social Media",
+    description: `I handled the account of Popeyes as they were opening in KSA. Popeyes integrated right into the Saudi culture as a fun and exciting brand touching with the excited Saudi youth. Here is a sample of my work for Popeyes, many of which I myself come with everything in it from the concept, the copy, and the design.`,
     thumbnail: "/images/Popeyes/1.png",
     images: [
       "/images/Popeyes/1.png",
@@ -236,6 +244,7 @@ export const projects = [
     id: "gipsy",
     name: "Gipsy",
     type: "Social Media + AI Reels",
+    description: `Created high-energy social media content and AI reels for Gipsy, aligning with their bold brand identity.`,
     thumbnail: "/images/Gipsy/A1.png",
     images: [
       "/images/Gipsy/A1.png",
@@ -257,6 +266,7 @@ export const projects = [
     id: "handy",
     name: "Handy",
     type: "Social Media + AI Reels",
+    description: `Managed social media visuals and AI reels for Handy, ensuring a clean and professional aesthetic.`,
     thumbnail: "/images/Handy/A1.png",
     images: [
       "/images/Handy/A1.png",
@@ -274,6 +284,7 @@ export const projects = [
     id: "ash",
     name: "ASH",
     type: "Social Media",
+    description: `ASH Vodka is a Lebanese Vodka Brand that is bold, young, elegant and proud.`,
     thumbnail: "/images/ASH/ASH%201.jpg",
     images: [
       "/images/ASH/ASH%201.jpg",
@@ -288,6 +299,7 @@ export const projects = [
     id: "la-roche",
     name: "La Roche",
     type: "Social Media",
+    description: `Adapted a dreamy visual style with the products being the main element in the brand.`,
     thumbnail: "/images/La%20Roche/A%20ball%20of%20harmony.jpg",
     images: [
       "/images/La%20Roche/A%20ball%20of%20harmony.jpg",
@@ -313,6 +325,7 @@ export const projects = [
     id: "aalaqaat",
     name: "Aalaqaat",
     type: "Social Media + Branding",
+    description: `I designed the core identity of Alaqaat, a Saudi law firm looking to position itself as a market-leading trustable partner.`,
     thumbnail: "/images/Aalaqaat/Artboard%201.png",
     images: [
       "/images/Aalaqaat/Artboard%201.png",
@@ -331,6 +344,7 @@ export const projects = [
     id: "al-hawari",
     name: "Al Hawari",
     type: "Social Media + Branding",
+    description: `I was responsible for the full rebranding of Al Hawari's famous juice shop in Beirut. I focused on blending 2 key elements into it; 1st was the old nostalgic Beirut feel as it Al Hawari's history is a big plus against its competitors. 2nd key element was having a very appealing visual style, using strong colors with minimal design to give it an aesthetic sense its target audiences would notice and enjoy.`,
     thumbnail: "/images/Al%20Hawari/Artboard%201.png",
     images: [
       "/images/Al%20Hawari/Artboard%201.png",
@@ -387,6 +401,7 @@ export const projects = [
     id: "aveeno",
     name: "Aveeno",
     type: "Social Media",
+    description: ``,
     thumbnail: "/images/Aveeno/Aveeno-1-Row-Grid_01.jpg",
     images: [
       "/images/Aveeno/Aveeno-1-Row-Grid_01.jpg",
@@ -398,6 +413,7 @@ export const projects = [
     id: "cwf",
     name: "CwF",
     type: "Social Media + Branding",
+    description: `I created both the visual identity and the communication style for Crispy w Fahita, adapted to reach all of its potential target audience with a strong persona. Redesigned the logo, adapted poppy colors, directed photoshoots, created new wrapping paper and packaging, store sign, and much more.`,
     thumbnail: "/images/CwF/1.png",
     images: [
       "/images/CwF/1.png",
@@ -439,6 +455,7 @@ export const projects = [
     id: "dermacare",
     name: "DermaCare",
     type: "Social Media",
+    description: ``,
     thumbnail: "/images/DermaCare/DermaCare_01.jpg",
     images: [
       "/images/DermaCare/DermaCare_01.jpg",
@@ -450,6 +467,7 @@ export const projects = [
     id: "dga",
     name: "DGA",
     type: "Others",
+    description: `DGA is a program by the Saudi Government that aims to digitalize work in all of its branches. I created the PDF that was given to all entities to explain the program (You can find snippets below) as well as designing and directing the main video of it.`,
     thumbnail: "/images/DGA/Artboard%201.png",
     images: [
       "/images/DGA/Artboard%201.png",
@@ -498,6 +516,7 @@ export const projects = [
     id: "ethos",
     name: "Ethos",
     type: "Social Media",
+    description: `Ethos is a KSA based creative agency I spent over a year working in. I used to create the visuals for the company whether they were needed to be posted on LinkedIn or be sent to the team or clients.`,
     thumbnail: "/images/Ethos/Hiring-%20Digital%20Account%20Lead.jpg",
     images: [
       "/images/Ethos/Hiring-%20Digital%20Account%20Lead.jpg",
@@ -510,6 +529,7 @@ export const projects = [
     id: "ferra-rawan",
     name: "Ferra Rawan",
     type: "Social Media + Branding",
+    description: ``,
     thumbnail: "/images/Ferra%20Rawan/Artboard%201.png",
     images: [
       "/images/Ferra%20Rawan/Artboard%201.png",
@@ -522,6 +542,7 @@ export const projects = [
     id: "fff",
     name: "FFF",
     type: "Social Media",
+    description: `Created the social media visual style and opening grids for Frozen Food Factory, a brand selling high level - long lasting frozen meals.`,
     thumbnail: "/images/FFF/1.png",
     images: [
       "/images/FFF/1.png",
@@ -536,6 +557,7 @@ export const projects = [
     id: "happies",
     name: "Happies",
     type: "Social Media + AI Reels",
+    description: `Produced fun and vibrant social media content and AI reels for Happies, capturing the brand's joyful essence.`,
     thumbnail: "/images/Happies/R1.mp4",
     videos: [
       "/images/Happies/R1.mp4",
@@ -547,6 +569,7 @@ export const projects = [
     id: "mac",
     name: "MAC",
     type: "Social Media",
+    description: `I worked on the account of MAC Platforms, a creative agency I worked in. I adopted a collage style for it along with different style of reels for depending on the client.`,
     thumbnail: "/images/MAC/1.png",
     images: [
       "/images/MAC/1.png",
@@ -574,6 +597,7 @@ export const projects = [
     id: "neostrata",
     name: "NeoStrata",
     type: "Social Media",
+    description: ``,
     thumbnail: "/images/NeoStrata/NeoStrata_01.jpg",
     images: [
       "/images/NeoStrata/NeoStrata_01.jpg",
@@ -585,6 +609,7 @@ export const projects = [
     id: "private",
     name: "Private",
     type: "Others",
+    description: `Confidential projects involving branding and visual identity design.`,
     thumbnail: "/images/Private/A1.jpg",
     images: [
       "/images/Private/A1.jpg",
@@ -596,6 +621,7 @@ export const projects = [
     id: "rami-baddour",
     name: "Rami Baddour",
     type: "Social Media + Branding",
+    description: ``,
     thumbnail: "/images/Rami%20Baddour/1.jpg",
     images: [
       "/images/Rami%20Baddour/1.jpg",
@@ -633,6 +659,7 @@ export const projects = [
     id: "sifr",
     name: "Sifr",
     type: "Social Media + Branding",
+    description: `Participated in creating the visual identity, adapting a powerful style of duotone and bitmap for image treatment, and conceptual graphics work. The aim was to create a unique to be stand out in the overwhelming timelines of today.`,
     thumbnail: "/images/Sifr/A1.jpeg",
     images: [
       "/images/Sifr/A1.jpeg",
