@@ -12,33 +12,38 @@ const videoExts = ['.mp4', '.mov', '.MOV', '.MP4'];
 const pdfExts = ['.pdf'];
 
 const projectTypes = {
-    'ASH': 'Social Media',
-    'Aalaqaat': 'Branding',
-    'Al Hawari': 'Branding',
-    'Aveeno': 'Skincare Marketing',
+    // User specified
     'Avene': 'Art Direction',
-    'Cannelle': 'Product Photography',
-    'CwF': 'Social Media + Branding',
-    'DGA': 'Others',
-    'DermaCare': 'Skincare Marketing',
-    'Ethos': 'Social Media',
-    'FFF': 'Food & Beverage',
-    'Ferra Rawan': 'Branding',
+    'Sofar': 'Social Media + Art Direction',
+    'OPPO': 'Social Media + AI Reels',
     'Freshdays': 'Social Media + AI Reels',
     'Gipsy': 'Social Media + AI Reels',
+    'CwF': 'Social Media + Branding',
     'Handy': 'Social Media + AI Reels',
-    'Happies': 'Social Media + AI Reels',
-    'La Roche': 'Food & Beverage',
+    'DGA': 'Others',
+    'ASH': 'Social Media',
     'MAC': 'Social Media',
-    'McCafe': 'Food & Beverage',
-    'NeoStrata': 'Skincare Marketing',
-    'OPPO': 'Social Media + AI Reels',
-    'Popeyes': 'Food & Beverage',
+    'Ethos': 'Social Media',
     'Private': 'Other',
-    'Rami Baddour': 'Branding',
-    'Sifr': 'Branding',
-    'Sofar': 'Social Media + Art Direction',
-    'Sunnymoon': 'Branding',
+    'Happies': 'Social Media + AI Reels',
+
+    // Inferred mappings for other projects to match user's allowed labels
+    'McCafe': 'Social Media',
+    'Popeyes': 'Social Media',
+    'La Roche': 'Social Media',
+    'Aveeno': 'Social Media',
+    'DermaCare': 'Social Media',
+    'NeoStrata': 'Social Media',
+    'FFF': 'Social Media',
+
+    'Aalaqaat': 'Social Media + Branding',
+    'Al Hawari': 'Social Media + Branding',
+    'Rami Baddour': 'Social Media + Branding',
+    'Sifr': 'Social Media + Branding',
+    'Sunnymoon': 'Social Media + Branding',
+    'Ferra Rawan': 'Social Media + Branding',
+
+    'Cannelle': 'Others',
 };
 
 // Priority order for projects (most important first)
@@ -203,9 +208,12 @@ export const skills = [
 
 // Experience data for About section
 export const experience = [
-  { date: '2023 - Present', title: 'Senior Graphic Designer', company: 'MAC Platforms' },
-  { date: '2021 - 2023', title: 'Graphic Designer', company: 'Ethos Agency (KSA)' },
-  { date: '2019 - 2021', title: 'Junior Designer', company: 'Freelance' },
+  { date: 'June 2025 - Current', title: 'Head of Design', company: 'BYND Network', subtitle: true },
+  { date: 'Jan 2025 - June 2025', title: 'Senior Graphic Designer', company: 'BYND Network' },
+  { date: '2024', title: 'Mid-Senior Level Graphic Designer', company: 'MAC Platforms' },
+  { date: '2022 - 2024', title: 'Graphic Designer', company: 'Ethos' },
+  { date: '2019 - 2022', title: 'Freelance Graphic Designer', company: 'Multiple Clients' },
+  { date: '2023 - Current', title: 'Organizer & Art Director', company: 'Sofar Sounds Beirut' },
 ]
 `;
 

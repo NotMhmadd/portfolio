@@ -26,7 +26,7 @@ export const projects = [
   {
     id: "mccafe",
     name: "McCafe",
-    type: "Food & Beverage",
+    type: "Social Media",
     thumbnail: "/images/McCafe/A1.jpg",
     images: [
       "/images/McCafe/A1.jpg",
@@ -79,7 +79,7 @@ export const projects = [
   {
     id: "popeyes",
     name: "Popeyes",
-    type: "Food & Beverage",
+    type: "Social Media",
     thumbnail: "/images/Popeyes/1.png",
     images: [
       "/images/Popeyes/1.png",
@@ -215,7 +215,7 @@ export const projects = [
   {
     id: "la-roche",
     name: "La Roche",
-    type: "Food & Beverage",
+    type: "Social Media",
     thumbnail: "/images/La%20Roche/A%20ball%20of%20harmony.jpg",
     images: [
       "/images/La%20Roche/A%20ball%20of%20harmony.jpg",
@@ -278,7 +278,7 @@ export const projects = [
   {
     id: "cannelle",
     name: "Cannelle",
-    type: "Product Photography",
+    type: "Others",
     thumbnail: "/images/Cannelle/A1.jpg",
     images: [
       "/images/Cannelle/A1.jpg",
@@ -309,7 +309,7 @@ export const projects = [
   {
     id: "al-hawari",
     name: "Al Hawari",
-    type: "Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/Al%20Hawari/Artboard%201.png",
     images: [
       "/images/Al%20Hawari/Artboard%201.png",
@@ -389,7 +389,7 @@ export const projects = [
   {
     id: "sifr",
     name: "Sifr",
-    type: "Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/Sifr/A1.jpeg",
     images: [
       "/images/Sifr/A1.jpeg",
@@ -465,7 +465,7 @@ export const projects = [
   {
     id: "fff",
     name: "FFF",
-    type: "Food & Beverage",
+    type: "Social Media",
     thumbnail: "/images/FFF/1.png",
     images: [
       "/images/FFF/1.png",
@@ -504,7 +504,7 @@ export const projects = [
   {
     id: "aalaqaat",
     name: "Aalaqaat",
-    type: "Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/Aalaqaat/Artboard%201.png",
     images: [
       "/images/Aalaqaat/Artboard%201.png",
@@ -522,7 +522,7 @@ export const projects = [
   {
     id: "aveeno",
     name: "Aveeno",
-    type: "Skincare Marketing",
+    type: "Social Media",
     thumbnail: "/images/Aveeno/Aveeno-1-Row-Grid_01.jpg",
     images: [
       "/images/Aveeno/Aveeno-1-Row-Grid_01.jpg",
@@ -533,7 +533,7 @@ export const projects = [
   {
     id: "dermacare",
     name: "DermaCare",
-    type: "Skincare Marketing",
+    type: "Social Media",
     thumbnail: "/images/DermaCare/DermaCare_01.jpg",
     images: [
       "/images/DermaCare/DermaCare_01.jpg",
@@ -544,7 +544,7 @@ export const projects = [
   {
     id: "ferra-rawan",
     name: "Ferra Rawan",
-    type: "Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/Ferra%20Rawan/Artboard%201.png",
     images: [
       "/images/Ferra%20Rawan/Artboard%201.png",
@@ -556,7 +556,7 @@ export const projects = [
   {
     id: "neostrata",
     name: "NeoStrata",
-    type: "Skincare Marketing",
+    type: "Social Media",
     thumbnail: "/images/NeoStrata/NeoStrata_01.jpg",
     images: [
       "/images/NeoStrata/NeoStrata_01.jpg",
@@ -567,7 +567,7 @@ export const projects = [
   {
     id: "rami-baddour",
     name: "Rami Baddour",
-    type: "Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/Rami%20Baddour/1.jpg",
     images: [
       "/images/Rami%20Baddour/1.jpg",
@@ -604,7 +604,7 @@ export const projects = [
   {
     id: "sunnymoon",
     name: "Sunnymoon",
-    type: "Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/Sunnymoon/Artboard%201.png",
     images: [
       "/images/Sunnymoon/Artboard%201.png",
@@ -659,7 +659,10 @@ export const skills = [
 
 // Experience data for About section
 export const experience = [
-  { date: '2023 - Present', title: 'Senior Graphic Designer', company: 'MAC Platforms' },
-  { date: '2021 - 2023', title: 'Graphic Designer', company: 'Ethos Agency (KSA)' },
-  { date: '2019 - 2021', title: 'Junior Designer', company: 'Freelance' },
+  { date: 'June 2025 - Current', title: 'Head of Design', company: 'BYND Network', subtitle: true },
+  { date: 'Jan 2025 - June 2025', title: 'Senior Graphic Designer', company: 'BYND Network' },
+  { date: '2024', title: 'Mid-Senior Level Graphic Designer', company: 'MAC Platforms' },
+  { date: '2022 - 2024', title: 'Graphic Designer', company: 'Ethos' },
+  { date: '2019 - 2022', title: 'Freelance Graphic Designer', company: 'Multiple Clients' },
+  { date: '2023 - Current', title: 'Organizer & Art Director', company: 'Sofar Sounds Beirut' },
 ]
