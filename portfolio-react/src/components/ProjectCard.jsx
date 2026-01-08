@@ -68,7 +68,7 @@ const ProjectCard = ({ project, index, onClick }) => {
 
   return (
     <div
-      className="project-card"
+      className={`project-card ${project.orientation || ''}`}
       style={{ animationDelay: `${index * 0.05}s` }}
       onClick={onClick}
       onMouseEnter={handleMouseEnter}

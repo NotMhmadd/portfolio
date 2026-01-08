@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const sharp = require('sharp');
 
 const imagesDir = './public/images';
 const folders = fs.readdirSync(imagesDir).filter(f =>
@@ -12,7 +13,7 @@ const videoExts = ['.mp4', '.mov', '.MOV', '.MP4'];
 const pdfExts = ['.pdf'];
 
 const projectTypes = {
-    // User specified
+    // User specified exact matches
     'Avene': 'Art Direction',
     'Sofar': 'Social Media + Art Direction',
     'OPPO': 'Social Media + AI Reels',
