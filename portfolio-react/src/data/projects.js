@@ -3,7 +3,7 @@ export const projects = [
   {
     id: "avene",
     name: "Avene",
-    type: "Skincare & Product Design",
+    type: "Art Direction",
     thumbnail: "/images/Avene/A1.jpg",
     images: [
       "/images/Avene/A1.jpg",
@@ -105,7 +105,7 @@ export const projects = [
   {
     id: "oppo",
     name: "OPPO",
-    type: "Tech & Electronics",
+    type: "Social Media + AI Reels",
     thumbnail: "/images/OPPO/A1.png",
     images: [
       "/images/OPPO/A1.png",
@@ -121,7 +121,7 @@ export const projects = [
   {
     id: "cwf",
     name: "CwF",
-    type: "Restaurant Branding",
+    type: "Social Media + Branding",
     thumbnail: "/images/CwF/1.png",
     images: [
       "/images/CwF/1.png",
@@ -162,7 +162,7 @@ export const projects = [
   {
     id: "mac",
     name: "MAC",
-    type: "Agency",
+    type: "Social Media",
     thumbnail: "/images/MAC/1.png",
     images: [
       "/images/MAC/1.png",
@@ -189,7 +189,7 @@ export const projects = [
   {
     id: "freshdays",
     name: "Freshdays",
-    type: "Social Media & Video",
+    type: "Social Media + AI Reels",
     thumbnail: "/images/Freshdays/A1.png",
     images: [
       "/images/Freshdays/A1.png",
@@ -240,7 +240,7 @@ export const projects = [
   {
     id: "gipsy",
     name: "Gipsy",
-    type: "Restaurant Branding",
+    type: "Social Media + AI Reels",
     thumbnail: "/images/Gipsy/A1.png",
     images: [
       "/images/Gipsy/A1.png",
@@ -261,7 +261,7 @@ export const projects = [
   {
     id: "handy",
     name: "Handy",
-    type: "Product Marketing",
+    type: "Social Media + AI Reels",
     thumbnail: "/images/Handy/A1.png",
     images: [
       "/images/Handy/A1.png",
@@ -298,7 +298,7 @@ export const projects = [
   {
     id: "happies",
     name: "Happies",
-    type: "Social Media & Video",
+    type: "Social Media + AI Reels",
     thumbnail: "/images/Happies/R1.mp4",
     videos: [
       "/images/Happies/R1.mp4",
@@ -365,7 +365,7 @@ export const projects = [
   {
     id: "sofar",
     name: "Sofar",
-    type: "Tech & Product",
+    type: "Social Media + Art Direction",
     thumbnail: "/images/Sofar/A1.jpg",
     images: [
       "/images/Sofar/A1.jpg",
@@ -405,7 +405,7 @@ export const projects = [
   {
     id: "ethos",
     name: "Ethos",
-    type: "Agency Branding",
+    type: "Social Media",
     thumbnail: "/images/Ethos/Hiring-%20Digital%20Account%20Lead.jpg",
     images: [
       "/images/Ethos/Hiring-%20Digital%20Account%20Lead.jpg",
@@ -417,7 +417,7 @@ export const projects = [
   {
     id: "dga",
     name: "DGA",
-    type: "Government & Corporate",
+    type: "Others",
     thumbnail: "/images/DGA/Artboard%201.png",
     images: [
       "/images/DGA/Artboard%201.png",
@@ -479,7 +479,7 @@ export const projects = [
   {
     id: "ash",
     name: "ASH",
-    type: "Beverage Branding",
+    type: "Social Media",
     thumbnail: "/images/ASH/ASH%201.jpg",
     images: [
       "/images/ASH/ASH%201.jpg",
@@ -493,7 +493,7 @@ export const projects = [
   {
     id: "private",
     name: "Private",
-    type: "Personal Projects",
+    type: "Other",
     thumbnail: "/images/Private/A1.jpg",
     images: [
       "/images/Private/A1.jpg",
@@ -649,11 +649,12 @@ export const projects = [
 
 // Skills data for About section
 export const skills = [
-  { name: 'Adobe Photoshop', percent: 95, icon: 'fab fa-adobe' },
-  { name: 'Adobe Illustrator', percent: 90, icon: 'fab fa-adobe' },
-  { name: 'Adobe After Effects', percent: 80, icon: 'fab fa-adobe' },
-  { name: 'Figma', percent: 85, icon: 'fab fa-figma' },
-  { name: 'Social Media Marketing', percent: 90, icon: 'fas fa-bullhorn' },
+  { name: 'Photoshop', percent: 93, icon: 'fas fa-image' },
+  { name: 'Premiere', percent: 88, icon: 'fas fa-video' },
+  { name: 'Illustrator', percent: 79, icon: 'fas fa-pen-nib' },
+  { name: 'AI Images Generation', percent: 95, icon: 'fas fa-robot' },
+  { name: 'AI Video Generation', percent: 91, icon: 'fas fa-film' },
+  { name: 'Vibe Coding', percent: 83, icon: 'fas fa-code' },
 ]
 
 // Experience data for About section

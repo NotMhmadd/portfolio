@@ -12,32 +12,32 @@ const videoExts = ['.mp4', '.mov', '.MOV', '.MP4'];
 const pdfExts = ['.pdf'];
 
 const projectTypes = {
-    'ASH': 'Beverage Branding',
+    'ASH': 'Social Media',
     'Aalaqaat': 'Branding',
     'Al Hawari': 'Branding',
     'Aveeno': 'Skincare Marketing',
-    'Avene': 'Skincare & Product Design',
+    'Avene': 'Art Direction',
     'Cannelle': 'Product Photography',
-    'CwF': 'Restaurant Branding',
-    'DGA': 'Government & Corporate',
+    'CwF': 'Social Media + Branding',
+    'DGA': 'Others',
     'DermaCare': 'Skincare Marketing',
-    'Ethos': 'Agency Branding',
+    'Ethos': 'Social Media',
     'FFF': 'Food & Beverage',
     'Ferra Rawan': 'Branding',
-    'Freshdays': 'Social Media & Video',
-    'Gipsy': 'Restaurant Branding',
-    'Handy': 'Product Marketing',
-    'Happies': 'Social Media & Video',
+    'Freshdays': 'Social Media + AI Reels',
+    'Gipsy': 'Social Media + AI Reels',
+    'Handy': 'Social Media + AI Reels',
+    'Happies': 'Social Media + AI Reels',
     'La Roche': 'Food & Beverage',
-    'MAC': 'Agency',
+    'MAC': 'Social Media',
     'McCafe': 'Food & Beverage',
     'NeoStrata': 'Skincare Marketing',
-    'OPPO': 'Tech & Electronics',
+    'OPPO': 'Social Media + AI Reels',
     'Popeyes': 'Food & Beverage',
-    'Private': 'Personal Projects',
+    'Private': 'Other',
     'Rami Baddour': 'Branding',
     'Sifr': 'Branding',
-    'Sofar': 'Tech & Product',
+    'Sofar': 'Social Media + Art Direction',
     'Sunnymoon': 'Branding',
 };
 
@@ -193,11 +193,12 @@ output += ']\n';
 output += `
 // Skills data for About section
 export const skills = [
-  { name: 'Adobe Photoshop', percent: 95, icon: 'fab fa-adobe' },
-  { name: 'Adobe Illustrator', percent: 90, icon: 'fab fa-adobe' },
-  { name: 'Adobe After Effects', percent: 80, icon: 'fab fa-adobe' },
-  { name: 'Figma', percent: 85, icon: 'fab fa-figma' },
-  { name: 'Social Media Marketing', percent: 90, icon: 'fas fa-bullhorn' },
+  { name: 'Photoshop', percent: 93, icon: 'fas fa-image' },
+  { name: 'Premiere', percent: 88, icon: 'fas fa-video' },
+  { name: 'Illustrator', percent: 79, icon: 'fas fa-pen-nib' },
+  { name: 'AI Images Generation', percent: 95, icon: 'fas fa-robot' },
+  { name: 'AI Video Generation', percent: 91, icon: 'fas fa-film' },
+  { name: 'Vibe Coding', percent: 83, icon: 'fas fa-code' },
 ]
 
 // Experience data for About section
