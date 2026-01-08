@@ -1485,8 +1485,9 @@ footer {
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
     .hero-content {
-        grid-template-columns: 1fr;
+        max-width: 100%;
         text-align: center;
+        align-items: center;
     }
 
     .hero-bio {
@@ -1498,16 +1499,14 @@ footer {
         justify-content: center;
     }
 
-    .hero-stats {
-        justify-content: center;
-    }
-
-    .hero-visual {
-        display: none;
+    .hero-image-wrapper {
+        margin: 3rem auto 0;
+        transform: translateX(0) translateY(30px);
     }
 
     .projects-grid {
-        column-count: 2;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
     .about-grid {
@@ -1517,27 +1516,50 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .floating-nav {
-        bottom: 1.5rem;
-        top: auto;
-        padding: 0.625rem 1.25rem;
+    .creative-nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-index,
+    .nav-dot {
+        display: none;
     }
 
     .hero {
-        padding-top: 4rem;
+        padding-top: 100px;
+        /* More space for fixed header */
+    }
+
+    .hero-container {
+        padding: 2rem 1.5rem;
     }
 
     .hero-name {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
 
-    .hero-stats {
-        gap: 1.5rem;
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-bio {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .hero-image-wrapper {
+        width: 280px;
+        max-width: 80vw;
     }
 
     .section-header {
         flex-direction: column;
         align-items: flex-start;
+        gap: 1.5rem;
     }
 
     .search-wrapper {
@@ -1545,65 +1567,70 @@ footer {
     }
 
     .projects-grid {
-        column-count: 1;
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+        gap: 2rem;
+        padding: 0;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Make cards pop more on mobile */
+    .project-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .skills-bars {
+        gap: 1rem;
     }
 
     .modal-gallery {
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;
+        gap: 1rem;
     }
 
     .contact-links {
         flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 1rem;
+        padding: 0 1.25rem;
     }
 
-    .nav-links {
-        gap: 1rem;
+    .hero-name {
+        font-size: 2rem;
     }
 
-    .nav-links a {
-        font-size: 0.8rem;
+    .hero-subtitle {
+        font-size: 1.25rem;
     }
 
-    .hero-actions {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn {
+    .btn-explore {
         width: 100%;
         justify-content: center;
-    }
-
-    .hero-stats {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .stat {
-        flex: 1;
-        min-width: 80px;
-        text-align: center;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        background: #fff;
+        padding: 1rem;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
 
     .modal-gallery {
         grid-template-columns: 1fr;
-        padding: 0.75rem;
+    }
+
+    .modal-header {
+        padding: 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
     }
 }
 
