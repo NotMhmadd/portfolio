@@ -825,23 +825,12 @@ h4 {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
     /* Crucial for masonry filling */
     gap: 1.5rem;
     padding: 0.5rem;
 }
 
-.project-card.portrait {
-    grid-row: span 2;
-    aspect-ratio: unset;
-}
-
-.project-card.landscape {
-    grid-column: span 2;
-    aspect-ratio: unset;
-}
-
-
+/* .project-card.portrait / landscape classes removed to enforce standard grid */
 
 .project-card {
     background: var(--white);
@@ -936,10 +925,7 @@ h4 {
     position: relative;
     overflow: hidden;
     background: var(--gray-100);
-    height: 100%;
-    /* Fill the card */
-    min-height: 300px;
-    /* Ensure visibility */
+    aspect-ratio: 4 / 5;
 }
 
 .project-thumbnail img,
