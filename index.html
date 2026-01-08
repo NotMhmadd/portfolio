@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad Ghazal — Graphic Designer</title>
+    <meta name="description" content="Graphic Designer with 5+ years of experience creating brand identities, campaign visuals, and social media content.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Nav -->
+    <nav class="floating-nav">
+        <a href="#" class="nav-logo">MG</a>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Mohamad<br>Ghazal</h1>
+                <p class="hero-title">Graphic Designer & Creative Marketer</p>
+                <p class="hero-bio">5+ years crafting brand identities, campaign visuals, and social media content for clients across the Middle East.</p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Brands</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Bento Grid Layout -->
+                <div class="hero-bento">
+                    <div class="bento-item bento-main">
+                        <img src="images/optimized/hero/mccafe.jpg" alt="McCafe Project">
+                        <div class="bento-overlay">
+                            <span class="bento-tag">Featured</span>
+                            <h3>McCafé Campaign</h3>
+                        </div>
+                    </div>
+                    <div class="bento-item bento-top-right">
+                        <img src="images/optimized/hero/oppo.jpg" alt="OPPO Project">
+                        <div class="bento-overlay">
+                            <span>OPPO</span>
+                        </div>
+                    </div>
+                    <div class="bento-item bento-bottom-right">
+                        <img src="images/optimized/hero/avene.jpg" alt="Avene Project">
+                        <div class="bento-overlay">
+                            <span>Avène</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating badges -->
+                <div class="hero-badge badge-1">
+                    <i class="fas fa-star"></i>
+                    <span>Top Rated</span>
+                </div>
+                <div class="hero-badge badge-2">
+                    <i class="fas fa-palette"></i>
+                    <span>Creative</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title-group">
+                    <h2>Selected Work</h2>
+                    <p class="section-subtitle">A collection of projects I've worked on</p>
+                </div>
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchBar" placeholder="Search projects...">
+                </div>
+            </div>
+            
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="All">All Projects</button>
+            </div>
+
+            <div class="projects-grid" id="gallery">
+                <!-- Projects generated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p class="about-lead">I'm a Beirut-based graphic designer with a marketing background, passionate about creating visuals that tell stories and drive results.</p>
+                    <p>With experience at agencies like Ethos (KSA) and MAC Platforms, I've had the privilege of working with brands like McCafé, Popeyes, OPPO, and various regional clients. I blend strategic thinking with creative execution.</p>
+                    
+                    <div class="skills-section">
+                        <h3 class="skills-title">Tools & Skills</h3>
+                        <div class="skills-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name"><i class="fab fa-adobe"></i> Photoshop</span>
+                                    <span class="skill-bar-percent">98%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" style="width: 98%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name"><i class="fas fa-video"></i> Premiere Pro</span>
+                                    <span class="skill-bar-percent">95%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name"><i class="fab fa-adobe"></i> Illustrator</span>
+                                    <span class="skill-bar-percent">82%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name"><i class="fas fa-wand-magic-sparkles"></i> Image Gen AI</span>
+                                    <span class="skill-bar-percent">96%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" style="width: 96%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name"><i class="fas fa-film"></i> Video Gen AI</span>
+                                    <span class="skill-bar-percent">93%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" style="width: 93%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-bar-name"><i class="fas fa-code"></i> Vibe Coding</span>
+                                    <span class="skill-bar-percent">78%</span>
+                                </div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-experience">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2024</span>
+                            <h4>Mid-Senior Graphic Designer</h4>
+                            <p>MAC Platforms — Lebanon</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2022 — 2024</span>
+                            <h4>Graphic Designer</h4>
+                            <p>Ethos — KSA</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2022 — Present</span>
+                            <h4>Freelance Designer</h4>
+                            <p>Various Clients</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2023 — Present</span>
+                            <h4>Beirut Curator</h4>
+                            <p>Sofar Sounds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Create Together</h2>
+                <p>Have a project in mind? I'd love to hear about it.</p>
+                <div class="contact-links">
+                    <a href="mailto:mhmadghazal51@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>mhmadghazal51@gmail.com</span>
+                    </a>
+                    <a href="tel:+96171371310" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(+961) 71 371310</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Beirut, Lebanon</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Mohamad Ghazal. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title"></h3>
+                <span class="modal-category"></span>
+            </div>
+            <div class="modal-gallery">
+                <!-- Images injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

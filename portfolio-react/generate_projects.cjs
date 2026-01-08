@@ -41,6 +41,31 @@ const projectTypes = {
     'Sunnymoon': 'Branding',
 };
 
+// Priority order for projects (most important first)
+// Projects not in this list will appear alphabetically after these
+const priorityOrder = [
+    'Avene',
+    'McCafe',
+    'Popeyes',
+    'OPPO',
+    'CwF',
+    'MAC',
+    'Freshdays',
+    'La Roche',
+    'Gipsy',
+    'Handy',
+    'Cannelle',
+    'Happies',
+    'Al Hawari',
+    'Sofar',
+    'Sifr',
+    'Ethos',
+    'DGA',
+    'FFF',
+    'ASH',
+    'Private',
+];
+
 function getFiles(folder) {
     const folderPath = path.join(imagesDir, folder);
     const allFiles = [];
@@ -110,6 +135,20 @@ const projects = folders.map(folder => {
 
     return project;
 }).filter(p => p.thumbnail !== null);
+
+// Sort projects by priority order
+projects.sort((a, b) => {
+    const aIndex = priorityOrder.indexOf(a.name);
+    const bIndex = priorityOrder.indexOf(b.name);
+    // If both are in priority list, sort by their position
+    if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+    // If only a is in priority list, a comes first
+    if (aIndex !== -1) return -1;
+    // If only b is in priority list, b comes first
+    if (bIndex !== -1) return 1;
+    // Otherwise sort alphabetically
+    return a.name.localeCompare(b.name);
+});
 
 // Generate JS code
 let output = '// Portfolio Data - All projects with their images (Auto-generated)\nexport const projects = [\n';
