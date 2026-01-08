@@ -52,8 +52,8 @@ const projectTypes = {
 const priorityOrder = [
     'Avene',
     'McCafe',
-    'Sunnymoon',
     'Sofar',
+    'Sunnymoon',
     'Cannelle',
     'OPPO',
     'Freshdays',
@@ -108,17 +108,23 @@ const projects = folders.map(folder => {
 
     const id = folder.toLowerCase().replace(/\s+/g, '-');
 
+    let thumbnail = null;
+    // Custom Thumbnail for Sunnymoon (27th image)
+    if (folder === 'Sunnymoon' && images.length > 26) {
+        thumbnail = encodePath(folder, images[26]);
+    } else if (images.length > 0) {
+        thumbnail = encodePath(folder, images[0]);
+    } else if (videos.length > 0) {
+        thumbnail = encodePath(folder, videos[0]);
+    } else if (pdfs.length > 0) {
+        thumbnail = 'pdf';
+    }
+
     const project = {
         id,
         name: folder,
         type: projectTypes[folder] || 'Design',
-        thumbnail: images.length > 0
-            ? encodePath(folder, images[0])
-            : videos.length > 0
-                ? encodePath(folder, videos[0])
-                : pdfs.length > 0
-                    ? 'pdf'
-                    : null,
+        thumbnail,
     };
 
     if (images.length > 0) {
