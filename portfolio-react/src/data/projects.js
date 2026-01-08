@@ -584,7 +584,7 @@ export const projects = [
   {
     id: "private",
     name: "Private",
-    type: "Other",
+    type: "Others",
     thumbnail: "/images/Private/A1.jpg",
     images: [
       "/images/Private/A1.jpg",
@@ -659,10 +659,10 @@ export const skills = [
 
 // Experience data for About section
 export const experience = [
-  { date: 'June 2025 - Current', title: 'Head of Design', company: 'BYND Network', subtitle: true },
+  { date: 'June 2025 - Current', title: 'Head of Design', company: 'BYND Network' },
   { date: 'Jan 2025 - June 2025', title: 'Senior Graphic Designer', company: 'BYND Network' },
   { date: '2024', title: 'Mid-Senior Level Graphic Designer', company: 'MAC Platforms' },
   { date: '2022 - 2024', title: 'Graphic Designer', company: 'Ethos' },
   { date: '2019 - 2022', title: 'Freelance Graphic Designer', company: 'Multiple Clients' },
-  { date: '2023 - Current', title: 'Organizer & Art Director', company: 'Sofar Sounds Beirut' },
+  { date: '2023 - Current', title: 'Organizer & Art Director', company: 'Sofar Sounds Beirut', subtitle: true },
 ]
