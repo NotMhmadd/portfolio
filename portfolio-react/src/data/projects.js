@@ -5,6 +5,7 @@ export const projects = [
     name: "Avene",
     type: "Art Direction",
     thumbnail: "/images/Avene/A1.jpg",
+    orientation: "portrait",
     images: [
       "/images/Avene/A1.jpg",
       "/images/Avene/B1.jpg",
@@ -28,6 +29,7 @@ export const projects = [
     name: "McCafe",
     type: "Social Media",
     thumbnail: "/images/McCafe/A1.jpg",
+    orientation: "square",
     images: [
       "/images/McCafe/A1.jpg",
       "/images/McCafe/M1.jpg",
@@ -81,6 +83,7 @@ export const projects = [
     name: "Sunnymoon",
     type: "Social Media + Branding",
     thumbnail: "/images/Sunnymoon/Artboard%201.png",
+    orientation: "landscape",
     images: [
       "/images/Sunnymoon/Artboard%201.png",
       "/images/Sunnymoon/Artboard%202.png",
@@ -125,6 +128,7 @@ export const projects = [
     name: "Sofar",
     type: "Social Media + Art Direction",
     thumbnail: "/images/Sofar/A1.jpg",
+    orientation: "portrait",
     images: [
       "/images/Sofar/A1.jpg",
       "/images/Sofar/B1.jpg",
@@ -149,6 +153,7 @@ export const projects = [
     name: "Cannelle",
     type: "Others",
     thumbnail: "/images/Cannelle/A1.jpg",
+    orientation: "portrait",
     images: [
       "/images/Cannelle/A1.jpg",
       "/images/Cannelle/B1.jpg",
@@ -169,6 +174,7 @@ export const projects = [
     name: "OPPO",
     type: "Social Media + AI Reels",
     thumbnail: "/images/OPPO/A1.png",
+    orientation: "portrait",
     images: [
       "/images/OPPO/A1.png",
       "/images/OPPO/A2.jpg",
@@ -185,6 +191,7 @@ export const projects = [
     name: "Freshdays",
     type: "Social Media + AI Reels",
     thumbnail: "/images/Freshdays/A1.png",
+    orientation: "portrait",
     images: [
       "/images/Freshdays/A1.png",
       "/images/Freshdays/A2.png",
@@ -211,6 +218,7 @@ export const projects = [
     name: "Popeyes",
     type: "Social Media",
     thumbnail: "/images/Popeyes/1.png",
+    orientation: "square",
     images: [
       "/images/Popeyes/1.png",
       "/images/Popeyes/A1.jpg",
@@ -237,6 +245,7 @@ export const projects = [
     name: "Gipsy",
     type: "Social Media + AI Reels",
     thumbnail: "/images/Gipsy/A1.png",
+    orientation: "portrait",
     images: [
       "/images/Gipsy/A1.png",
       "/images/Gipsy/B1.png",
@@ -258,6 +267,7 @@ export const projects = [
     name: "Handy",
     type: "Social Media + AI Reels",
     thumbnail: "/images/Handy/A1.png",
+    orientation: "portrait",
     images: [
       "/images/Handy/A1.png",
       "/images/Handy/A2.png",
@@ -275,6 +285,7 @@ export const projects = [
     name: "ASH",
     type: "Social Media",
     thumbnail: "/images/ASH/ASH%201.jpg",
+    orientation: "portrait",
     images: [
       "/images/ASH/ASH%201.jpg",
       "/images/ASH/ASH%202.jpg",
@@ -289,6 +300,7 @@ export const projects = [
     name: "La Roche",
     type: "Social Media",
     thumbnail: "/images/La%20Roche/A%20ball%20of%20harmony.jpg",
+    orientation: "portrait",
     images: [
       "/images/La%20Roche/A%20ball%20of%20harmony.jpg",
       "/images/La%20Roche/A%20crunch%20you%20can%20feel.jpg",
@@ -314,6 +326,7 @@ export const projects = [
     name: "Aalaqaat",
     type: "Social Media + Branding",
     thumbnail: "/images/Aalaqaat/Artboard%201.png",
+    orientation: "landscape",
     images: [
       "/images/Aalaqaat/Artboard%201.png",
       "/images/Aalaqaat/Artboard%202.png",
@@ -332,6 +345,7 @@ export const projects = [
     name: "Al Hawari",
     type: "Social Media + Branding",
     thumbnail: "/images/Al%20Hawari/Artboard%201.png",
+    orientation: "landscape",
     images: [
       "/images/Al%20Hawari/Artboard%201.png",
       "/images/Al%20Hawari/Artboard%202.jpg",
@@ -388,6 +402,7 @@ export const projects = [
     name: "Aveeno",
     type: "Social Media",
     thumbnail: "/images/Aveeno/Aveeno-1-Row-Grid_01.jpg",
+    orientation: "portrait",
     images: [
       "/images/Aveeno/Aveeno-1-Row-Grid_01.jpg",
       "/images/Aveeno/Aveeno-1-Row-Grid_02.jpg",
@@ -399,6 +414,7 @@ export const projects = [
     name: "CwF",
     type: "Social Media + Branding",
     thumbnail: "/images/CwF/1.png",
+    orientation: "portrait",
     images: [
       "/images/CwF/1.png",
       "/images/CwF/2.png",
@@ -440,6 +456,7 @@ export const projects = [
     name: "DermaCare",
     type: "Social Media",
     thumbnail: "/images/DermaCare/DermaCare_01.jpg",
+    orientation: "portrait",
     images: [
       "/images/DermaCare/DermaCare_01.jpg",
       "/images/DermaCare/DermaCare_02.jpg",
@@ -451,6 +468,7 @@ export const projects = [
     name: "DGA",
     type: "Others",
     thumbnail: "/images/DGA/Artboard%201.png",
+    orientation: "portrait",
     images: [
       "/images/DGA/Artboard%201.png",
       "/images/DGA/Artboard%202.png",
@@ -499,6 +517,7 @@ export const projects = [
     name: "Ethos",
     type: "Social Media",
     thumbnail: "/images/Ethos/Hiring-%20Digital%20Account%20Lead.jpg",
+    orientation: "square",
     images: [
       "/images/Ethos/Hiring-%20Digital%20Account%20Lead.jpg",
       "/images/Ethos/%D8%B9%D9%8A%D8%AF%20%20%D8%A7%D9%94%D8%B6%D8%AD%D9%89%20%D9%85%D8%A8%D8%A7%D8%B1%D9%83.jpg",
@@ -511,6 +530,7 @@ export const projects = [
     name: "Ferra Rawan",
     type: "Social Media + Branding",
     thumbnail: "/images/Ferra%20Rawan/Artboard%201.png",
+    orientation: "square",
     images: [
       "/images/Ferra%20Rawan/Artboard%201.png",
       "/images/Ferra%20Rawan/Artboard%202.png",
@@ -523,6 +543,7 @@ export const projects = [
     name: "FFF",
     type: "Social Media",
     thumbnail: "/images/FFF/1.png",
+    orientation: "portrait",
     images: [
       "/images/FFF/1.png",
       "/images/FFF/2.png",
@@ -537,6 +558,7 @@ export const projects = [
     name: "Happies",
     type: "Social Media + AI Reels",
     thumbnail: "/images/Happies/R1.mp4",
+    orientation: "landscape",
     videos: [
       "/images/Happies/R1.mp4",
       "/images/Happies/R2.mp4",
@@ -548,6 +570,7 @@ export const projects = [
     name: "MAC",
     type: "Social Media",
     thumbnail: "/images/MAC/1.png",
+    orientation: "portrait",
     images: [
       "/images/MAC/1.png",
       "/images/MAC/Highlights/1.png",
@@ -575,6 +598,7 @@ export const projects = [
     name: "NeoStrata",
     type: "Social Media",
     thumbnail: "/images/NeoStrata/NeoStrata_01.jpg",
+    orientation: "portrait",
     images: [
       "/images/NeoStrata/NeoStrata_01.jpg",
       "/images/NeoStrata/NeoStrata_02.jpg",
@@ -586,6 +610,7 @@ export const projects = [
     name: "Private",
     type: "Others",
     thumbnail: "/images/Private/A1.jpg",
+    orientation: "portrait",
     images: [
       "/images/Private/A1.jpg",
       "/images/Private/A2.jpg",
@@ -597,6 +622,7 @@ export const projects = [
     name: "Rami Baddour",
     type: "Social Media + Branding",
     thumbnail: "/images/Rami%20Baddour/1.jpg",
+    orientation: "landscape",
     images: [
       "/images/Rami%20Baddour/1.jpg",
       "/images/Rami%20Baddour/2.jpg",
@@ -634,6 +660,7 @@ export const projects = [
     name: "Sifr",
     type: "Social Media + Branding",
     thumbnail: "/images/Sifr/A1.jpeg",
+    orientation: "square",
     images: [
       "/images/Sifr/A1.jpeg",
       "/images/Sifr/B1.jpg",

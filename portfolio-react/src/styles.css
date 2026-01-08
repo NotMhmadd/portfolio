@@ -833,11 +833,15 @@ h4 {
 
 .project-card.portrait {
     grid-row: span 2;
+    aspect-ratio: unset;
 }
 
 .project-card.landscape {
     grid-column: span 2;
+    aspect-ratio: unset;
 }
+
+
 
 .project-card {
     background: var(--white);
@@ -932,7 +936,10 @@ h4 {
     position: relative;
     overflow: hidden;
     background: var(--gray-100);
-    aspect-ratio: 4 / 5;
+    height: 100%;
+    /* Fill the card */
+    min-height: 300px;
+    /* Ensure visibility */
 }
 
 .project-thumbnail img,
