@@ -924,8 +924,20 @@ h4 {
 .project-thumbnail {
     position: relative;
     overflow: hidden;
-    background: var(--gray-100);
+    background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
     aspect-ratio: 4 / 5;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 .project-thumbnail img,
@@ -934,8 +946,16 @@ h4 {
     height: 100%;
     display: block;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
 }
+
+.project-thumbnail img.loaded,
+.project-thumbnail video {
+    opacity: 1;
+}
+
+
 
 .project-overlay {
     position: absolute;
@@ -1417,13 +1437,22 @@ footer {
     position: relative;
     cursor: pointer;
     transition: var(--transition);
-    background: var(--gray-100);
+    background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    min-height: 150px;
 }
 
 .modal-gallery .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-gallery .gallery-item img.loaded {
+    opacity: 1;
 }
 
 .modal-gallery .gallery-item:hover {
