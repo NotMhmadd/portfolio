@@ -1418,12 +1418,39 @@ footer {
     cursor: pointer;
     transition: var(--transition);
     background: var(--gray-100);
+    min-height: 250px;
+    /* Force minimum height for loading state */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-loader {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-400);
+    font-size: 1.5rem;
+    z-index: 1;
 }
 
 .modal-gallery .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.modal-gallery .gallery-item img.hidden {
+    opacity: 0;
+}
+
+.modal-gallery .gallery-item img.visible {
+    opacity: 1;
 }
 
 .modal-gallery .gallery-item:hover {

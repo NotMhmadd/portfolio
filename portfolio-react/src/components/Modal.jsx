@@ -1,4 +1,4 @@
-import { useEffect, useRef, useMemo } from 'react'
+import { useEffect, useRef, useMemo, useState } from 'react'
 
 const sortByFilename = (files) => {
   if (!files) return []
@@ -7,6 +7,31 @@ const sortByFilename = (files) => {
     const nameB = b.split('/').pop().toLowerCase()
     return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: 'base' })
   })
+}
+
+const GalleryItem = ({ src, index, project, onImageClick, allImages }) => {
+  const [isLoading, setIsLoading] = useState(true)
+
+  return (
+    <div
+      className={`gallery-item ${isLoading ? 'loading' : ''}`}
+      onClick={() => onImageClick(src, allImages, index)}
+    >
+      <div className="gallery-loader">
+        <i className="fas fa-circle-notch fa-spin"></i>
+      </div>
+      <img
+        src={src}
+        alt={`${project.name} - ${index + 1}`}
+        loading={index < 3 ? "eager" : "lazy"}
+        fetchpriority={index < 3 ? "high" : "auto"}
+        decoding={index < 3 ? "sync" : "async"}
+        onLoad={() => setIsLoading(false)}
+        className={isLoading ? 'hidden' : 'visible'}
+        onError={(e) => { e.target.parentElement.style.display = 'none' }}
+      />
+    </div>
+  )
 }
 
 const Modal = ({ project, onClose, onImageClick }) => {
@@ -43,20 +68,14 @@ const Modal = ({ project, onClose, onImageClick }) => {
         </div>
         <div className="modal-gallery" ref={galleryRef}>
           {sortedImages.map((src, index) => (
-            <div
+            <GalleryItem
               key={`img-${index}`}
-              className="gallery-item"
-              onClick={() => onImageClick(src, sortedImages, index)}
-            >
-              <img
-                src={src}
-                alt={`${project.name} - ${index + 1}`}
-                loading={index < 3 ? "eager" : "lazy"}
-                fetchpriority={index < 3 ? "high" : "auto"}
-                decoding={index < 3 ? "sync" : "async"}
-                onError={(e) => { e.target.parentElement.style.display = 'none' }}
-              />
-            </div>
+              src={src}
+              index={index}
+              project={project}
+              onImageClick={onImageClick}
+              allImages={sortedImages}
+            />
           ))}
           {sortedVideos.map((src, index) => (
             <div
