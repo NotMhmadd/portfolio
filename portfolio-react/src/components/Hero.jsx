@@ -78,7 +78,13 @@ const Hero = () => {
             <div className="scrap scrap-arrow">↗</div>
           </div>
           <div className="hero-image">
-            <img src="/images/profile.png" alt="Mohamad Ghazal" />
+            <img
+              src="/images/profile.png"
+              alt="Mohamad Ghazal"
+              loading="eager"
+              fetchpriority="high"
+              decoding="sync"
+            />
           </div>
         </div>
       </div>

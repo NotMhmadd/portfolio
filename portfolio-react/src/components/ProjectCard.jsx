@@ -59,8 +59,9 @@ const ProjectCard = ({ project, index, onClick }) => {
       <img
         src={project.thumbnail}
         alt={project.name}
-        loading="lazy"
-        decoding="async"
+        loading={index < 4 ? "eager" : "lazy"}
+        decoding={index < 4 ? "sync" : "async"}
+        fetchpriority={index < 4 ? "high" : "auto"}
         onError={(e) => { e.target.style.display = 'none' }}
       />
     )

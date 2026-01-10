@@ -84,6 +84,7 @@ const Work = ({ onProjectClick }) => {
                 key={project.id}
                 project={project}
                 index={index}
+                priority={index < 4} // Eager load first 4 items
                 onClick={() => onProjectClick(project)}
               />
             ))
