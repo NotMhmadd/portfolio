@@ -61,7 +61,6 @@ const ProjectCard = ({ project, index, onClick }) => {
         alt={project.name}
         loading="lazy"
         decoding="async"
-        onLoad={(e) => e.target.classList.add('loaded')}
         onError={(e) => { e.target.style.display = 'none' }}
       />
     )

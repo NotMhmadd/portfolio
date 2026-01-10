@@ -52,7 +52,6 @@ const Modal = ({ project, onClose, onImageClick }) => {
                 src={src}
                 alt={`${project.name} - ${index + 1}`}
                 loading="lazy"
-                onLoad={(e) => e.target.classList.add('loaded')}
                 onError={(e) => { e.target.parentElement.style.display = 'none' }}
               />
             </div>
