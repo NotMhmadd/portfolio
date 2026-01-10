@@ -51,7 +51,9 @@ const Modal = ({ project, onClose, onImageClick }) => {
               <img
                 src={src}
                 alt={`${project.name} - ${index + 1}`}
-                loading="lazy"
+                loading={index < 3 ? "eager" : "lazy"}
+                fetchpriority={index < 3 ? "high" : "auto"}
+                decoding={index < 3 ? "sync" : "async"}
                 onError={(e) => { e.target.parentElement.style.display = 'none' }}
               />
             </div>
